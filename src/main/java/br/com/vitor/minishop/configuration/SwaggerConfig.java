@@ -24,7 +24,7 @@ public class SwaggerConfig {
                 .securityContexts(Arrays.asList(securityContext()))
                 .securitySchemes(Arrays.asList(apiKey()))
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.vitor.controller"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.vitor.minishop.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
