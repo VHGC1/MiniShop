@@ -1,0 +1,36 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="vitorjjhg@hotmail.com" id="CRIA_TABELAS">
+        <comment>Cria Tabelas</comment>
+        <sqlFile path="schema-minishop.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet author="vitorjjhg@hotmail.com" id="INSERI_DADOS_SUPPLIER">
+        <comment>Inseri Dados SUPPLIER</comment>
+        <!-- Verificar se seu banco está em PT/BR ou em EN e usar o script correto aqui -->
+        <sqlFile path="supplier.sql" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="vitorjjhg@hotmail.com" id="INSERI_DADOS_PRODUCT">
+        <comment>Inseri Dados PRODUCT</comment>
+        <!-- Verificar se seu banco está em PT/BR ou em EN e usar o script correto aqui -->
+        <sqlFile path="product.sql" relativeToChangelogFile="true" />
+    </changeSet>
+    <changeSet author="vitorjjhg@hotmail.com" id="CRIAR_TABELA_PRODUCTIMAGE">
+        <comment>Inseri Tabela ProductImage</comment>
+        <sqlFile path="create-table-productimage.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet author="vitorjjhg@hotmail.com" id="CRIAR-TABELA-USERS-E-ROLES">
+        <comment>Criar tabelas users e roles</comment>
+        <sqlFile path="create-tables-user-roles.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet author="vitorjjhg@hotmail.com" id="INSERIR-USERS-E-ROLES">
+        <comment>Inserir users e roles</comment>
+        <sqlFile path="users-roles.sql" relativeToChangelogFile="true" />
+    </changeSet>
+</databaseChangeLog>
