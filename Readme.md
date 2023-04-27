@@ -24,8 +24,7 @@
 
 ## 💻 Projeto
 
-API for providing information about Star Wars franchise.
-This project was created to solve the challenge proposed [here](https://github.com/AmeDigital/challenge-back-end-hit).
+API desenvolvida pensando em uma loja que oferece controle de acesso com roles para cada usuário. Através desta API, é possível cadastrar novos usuários e realizar a listagem de produtos, clientes, pedidos e fornecedores. Além disso, também é possível fazer upload de imagens.
 
 ## 💡 Solução
 
