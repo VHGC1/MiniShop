@@ -29,9 +29,11 @@ This project was created to solve the challenge proposed [here](https://github.c
 
 ## 💡 Solução
 
-Este projeto foi desonvolvido
+Este projeto foi desenvolvido com
 
 [x] Controllers para as diferentes rotas
+
+[x] Liquibase para realizar as migrations
 
 [x] Spring Data para salvar os dados
 
